@@ -1,0 +1,33 @@
+# Ignorar carpeta build
+/build/
+
+# Ignorar compilados de Cargo
+/target/
+**/*.rs.bk
+
+# Archivos de configuración temporales
+Cargo.lock
+*.log
+
+# Archivos de sistema o IDEs
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Archivos de backup o temporales
+*~
+*.bak
+*.tmp
+
+# Ignorar archivos binarios generados
+*.exe
+*.out
+
+# Ignorar carpetas de entorno de desarrollo
+.vscode/
+.idea/
+
+# Permitir explícitamente out.bmp 
+/out.bmp
+!out.bmp
