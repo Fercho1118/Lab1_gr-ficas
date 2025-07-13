@@ -6,19 +6,16 @@ use lines::draw_polygon_outline;
 use raylib::prelude::*;
 
 fn main() {
-    let (mut rl, _thread) = raylib::init().size(800, 600).title("Poligon 1").build();
-
     let width = 800;
     let height = 600;
     let mut fb = FrameBuffer::new(width, height);
 
-    let polygon1 = vec![
-        (165, 380), (185, 360), (180, 330), (207, 345), (233, 330),
-        (230, 360), (250, 380), (220, 385), (205, 410), (193, 383),
+    let polygon2 = vec![
+        (321, 335), (288, 286), (339, 251), (374, 302),
     ];
 
-    fill_polygon(&mut fb, &polygon1, Color::YELLOW);
-    draw_polygon_outline(&mut fb, &polygon1, Color::WHITE);
+    fill_polygon(&mut fb, &polygon2, Color::BLUE); 
+    draw_polygon_outline(&mut fb, &polygon2, Color::WHITE); 
 
     fb.save("out.bmp");
 }
