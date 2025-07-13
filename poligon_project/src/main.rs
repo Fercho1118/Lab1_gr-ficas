@@ -10,12 +10,12 @@ fn main() {
     let height = 600;
     let mut fb = FrameBuffer::new(width, height);
 
-    let polygon2 = vec![
-        (321, 335), (288, 286), (339, 251), (374, 302),
+    let polygon3 = vec![
+        (377, 249), (411, 197), (436, 249),
     ];
 
-    fill_polygon(&mut fb, &polygon2, Color::BLUE); 
-    draw_polygon_outline(&mut fb, &polygon2, Color::WHITE); 
+    fill_polygon(&mut fb, &polygon3, Color::RED);     
+    draw_polygon_outline(&mut fb, &polygon3, Color::WHITE); 
 
     fb.save("out.bmp");
 }
